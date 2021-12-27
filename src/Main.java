@@ -8,15 +8,14 @@ public class Main {
         
         if  (accountReplenished>=1000)
         {
-            bonus=accountReplenished/100;
-            totalAccount = сlientAccount+accountReplenished+bonus;
-            System.out.println ("Итоговый счет с бонусоми =" + totalAccount);
+            bonus=accountReplenished/100;                     
         }
         else
         {
-            totalAccount = сlientAccount+accountReplenished;
-            System.out.println ("Итоговый счет без бонусов =" + totalAccount);
+           bonus=0;  
         }
+        totalAccount = сlientAccount+accountReplenished+bonus;
+        System.out.println ("Итоговый счет=" + totalAccount);
 
     }
 
